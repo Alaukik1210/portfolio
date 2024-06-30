@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/14cb17ffa1.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        'sd': '12px 8px 20px #EB5E28'
+                    },
+                    animation: {
+                        "bouncefade": "bounce 2s infinite"
+                    },
+                    colors: {
+                        primary: "#252422",
+                        text: "#EB5E28",
+                        accent: "#FFFCF2",
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary scroll-smooth m-10 mt-5 overflow-x-hidden ">
+    <div class=" overflow-x-hidden full-page font-[poppins]">
+        <nav class="flex justify-between item-center p-10 pt-10 ">
+            <h1 class=" sm:text-4xl text-xl font-semibold text-text flex justify-center items-center ">Alaukik Mishra
+            </h1>
+            <div>
+                <ul class=" text-accent w-full sm:gap-4  capitalize text-lg sm:flex hidden">
+                    <li class="rounded-lg border-none hover:text-text p-2"><a href="#home">Home</a></li>
+                    <li class="rounded-lg border-none hover:text-text p-2"><a href="#about">About</a></li>
+                    <li class="rounded-lg border-none hover:text-text p-2"><a href="#skills">Skills</a></li>
+                    <li class="rounded-lg border-none hover:text-text p-2"><a href="#project">Project</a></li>
+                   <a href="#contact"> <button class="rounded-lg border-none bg-text p-2 w-[8rem] outline-none hover:bg-orange-900" >Contact
+                    me</button></a>
+                </ul>
+                <button
+                    class="sm:hidden block rounded-lg border-none bg-text p-2 w-[6rem] sm:w-[8rem] outline-none text-white">Hire
+                    me</button>
+            </div>
+        </nav>
+        <div id="home" class="hero flex justify-center items-center h-[40dvh]">
+            <div class="flex flex-col justify-center items-center w-[320px]  sm:w-[500px] md:w-full">
+                <h1 class="text-3xl sm:text-7xl w-full font-semibold text-text m-10 hover:animate-pulse text-center">
+                    Frontend <span class="text-white">Devloper</span></h1>
+                <p class="text-white sm:text-xl text-sm">Hi, I&apos;m <span class="text-text">Alaukik Mishra,</span> a
+                    Frontend Devloper based in India.
+
+                </p>
+                <button 
+                    class="rounded-full  border-none mt-10 bg-text p-2 sm:w-36 w-20 text-accent text-shadow text-sm sm:text-md outline-none"> <a target="_blank"  href="https://drive.google.com/file/d/1-aZ_BsAatUulJIZD9avMyDjXsOzYY0wr/view" >
+                        Resume<i  class="fa-solid fa-download p-2"></i>
+                    </a> </button>
+            </div>
+
+        </div>
+
+        <!-- ------ABOUT---------------------- -->
+        <section id="about" class=" flex justify-center items-center">
+            <div class="p-20 max-h-full sm:shadow-lg shadow-slate-500 rounded-3xl ">
+                <h1 class="text-white text-2xl sm:text-5xl font-semibold">About me</h1>
+                <p class="text-accent pt-10 text-lg">Hello! My name is <span class="text-text">
+                        Alaukik Mishra,
+                    </span> and I'm currently a 20-year-old pursuing a Bachelor's degree in Computer Science Engineering
+                    at Bennett University. I have a keen interest in frontend development and am passionate about
+                    creating engaging and user-friendly interfaces.</p>
+                <h3 class="text-text text-3xl pt-5 pb-5">
+                    Skills
+                </h3>
+                <ol class="text-accent text-lg list-disc pl-10">
+                    <li><span class="text-text">Frontend Development:</span> I have a strong command of HTML, CSS,
+                        Tailwind CSS, and JavaScript.</li>
+                    <li><span class="text-text">Frameworks:</span> Currently expanding my skills in React.js to build
+                        more dynamic and efficient web applications</li>
+                    <li><span class="text-text">Data Structures and Algorithms:</span> Actively learning and
+                        implementing DSA concepts to enhance my problem-solving abilities.</li>
+                </ol>
+                <h3 class="text-text text-3xl  pt-5 pb-5 capitalize">
+                    background
+                </h3>
+                <p class="text-accent  text-lg">
+                    Ever since I embarked on my journey into web development, I've been fascinated by the intersection
+                    of creativity and technology. My goal is to leverage my skills in frontend development to craft
+                    seamless digital experiences that are both functional and visually appealing.
+                </p>
+            </div>
+        </section>
+        <!-- ---------------SKILLS---------------------------- -->
+        <section>
+            <div id="skills" class=" flex justify-center items-center ">
+
+                <div class="p-20 w-full  md:shadow-lg shadow-slate-500 rounded  -3xl">
+                    <h1 class="text-white text-5xl font-semibold ">
+                        Skills
+                    </h1>
+                    <div class=" md:grid md:grid-cols-3   mt-5 ">
+                        <div
+                            class=" shadow-sd rounded-lg  text-text hover:shadow-none  hover:-translate-y-3   transition duration-150 ease-in-out hover:ease-in-out  hover:text-white hover:bg-text hover:delay-175 p-10 m-5 ">
+                            <h2 class="  m-5 text-4xl font-semibold uppercase  text-center">Html</h2>
+                            
+                               <div class="w-full flex justify-center items-center">
+                                   <img class="h-28 w-28  m-4" src="./html.png" alt="">
+
+                               </div>
+                               
+                            
+                        </div>
+                        <div
+                            class=" w-[320px] shadow-sd rounded-lg hover:shadow-none text-text hover:-translate-y-3 transition duration-150 ease-in-out hover:ease-in-out  hover:text-white hover:delay-175 hover:bg-text p-10 m-5">
+                            <h2 class="  m-5 text-4xl w-full relative  font-semibold uppercase  text-center">Css</h2>
+                           
+                                <div class="w-full flex justify-center items-center">
+                                    <img  class="h-28 w-28 m-4" src="./social.png" alt="">
+                                    
+                                </div>  
+                                
+                            
+                        </div>
+                        <div
+                            class=" rounded-lg shadow-sd  hover:shadow-none text-text hover:-translate-y-3 transition duration-150 ease-in-out hover:ease-in-out hover:text-white hover:delay-175 hover:bg-text p-10 m-5">
+                            <h2 class="  m-5 text-4xl font-semibold uppercase  text-center">Javascript</h2>
+                            
+                              <div class="w-full flex justify-center items-center">
+                                <img  class="h-28 w-28  m-4" src="./js.png" alt="">
+                              </div> 
+                                
+                           
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- --------------PROJECT-------------------- -->
+
+        <section>
+            <div id="project" class=" flex justify-center items-center ">
+                <div
+                    class="p-20  md:shadow-lg shadow-slate-500 rounded-3xl w-full flex justify-center items-center flex-col">
+                    <h1 class="text-white text-5xl font-semibold text-left w-full">Project</h1>
+
+
+                    <div class=" md:grid md:gap-0 lg:gap-28 md:grid-cols-1 lg:grid-cols-3  mt-5 ">
+                        
+                        <a target="_blank"  href="https://alaukik1210.github.io/WeatherApp/"
+                            class="text-text rounded-lg  shadow-sd   p-10 m-5 bg-primary md:h-fit md:w-fit  hover:shadow-none  hover:-translate-y-3   transition duration-150 ease-in-out hover:ease-in-out  hover:text-white hover:bg-text hover:delay-175 hover:text-white ">
+                            <img class="h-50 w-50   md:h-[300px] md:w-[300px] rounded-lg" src="./weather-logo.jpg"
+                                alt="">
+                            <h1 class="md:text-2xl text-center text-3xl mt-4 md:m-5 md:text-3xl">
+                                Weather
+                            </h1>
+                            <h3 class="hover:text-white text-center">
+                                click here <i class="fa-solid fa-up-right-from-square"></i>
+                            </h3>
+                           
+                           
+                        </a>
+                    
+                        
+                        <a target="_blank" href="https://calculator-by-alaukik.netlify.app/"
+                            class=" text-text rounded-lg shadow-sd  p-10 m-5 bg-primary md:h-fit md:w-fit  hover:shadow-none  hover:-translate-y-3   transition duration-150 ease-in-out hover:ease-in-out  hover:text-white hover:bg-text hover:delay-175 hover:text-white">
+                            <img class="h-50 w-50  hover:shadow-none md:h-[300px] md:w-[300px] rounded-lg"
+                                src="./calc.jpg" alt="">
+                            <h1 class="md:text-2xl text-center text-3xl mt-4 md:m-5 md:text-3xl">
+                                Calculator
+                            </h1>
+                            <h3 class="hover:text-white text-center">
+                                click here <i class="fa-solid fa-up-right-from-square"></i>
+                            </h3>
+                            
+
+                            
+
+                                   
+
+                        </a>
+                    
+                        
+                        <a target="_blank" href="https://alaukik1210.github.io/Expence-Tracker/"
+                            class="text-text shadow-sd z-50 rounded-lg p-10 m-5 bg-primary md:h-fit md:w-fit  hover:shadow-none  hover:-translate-y-3   transition duration-150 ease-in-out hover:ease-in-out  hover:text-white hover:bg-text hover:delay-175 hover:text-white">
+                            <img class="h-50 w-50   hover:shadow-none md:h-[300px] md:w-[300px]  rounded-lg "
+                                src="./expences.jpeg" alt="">
+                            <h1 class="md:text-2xl text-center text-3xl mt-4 md:m-5 md:text-3xl">
+                                Expence Tracker
+                            </h1>
+                            <h3 class="hover:text-white text-center">
+                                click here <i class="fa-solid fa-up-right-from-square"></i>
+                            </h3>
+                            
+                            
+                    </a>
+                
+                </div>
+            </div>
+        </section>
+        <!-- ---------------contact section----------------- -->
+        <section>
+
+            <footer>
+                <div id="contact" class="p-20  md:shadow-lg shadow-slate-500 rounded-3xl w-full">
+                    <h1 class="text-white text-5xl font-semibold text-left w-full mb-8">
+                        Contact me
+                    </h1>
+                    <div class="flex justify-evenly">
+
+                        <div class=" flex flex-col   ">
+                            <form name="submit-to-google-sheet"  class=" flex flex-col   ">
+                                <input class="shadow-sd bg-transparent text-white w-96 h-16 m-4 p-4" type="text" name="Name"
+                                placeholder="your name" required>
+                            <input class="bg-transparent shadow-sd w-96 text-white h-16 m-4 p-4" type="email" name="Email" placeholder="your E-mail"
+                                required>
+                            <textarea class="h-40 w-96 text-white bg-transparent shadow-sd m-4 p-4 " name="Message" id="message"
+                                placeholder="message"></textarea>
+                                <button
+                                class="rounded-lg border-none bg-text p-2 w-[8rem] outline-none mt-8 ml-8  text-white hover:bg-orange-900">Submit</button>
+
+                            </form>
+                            <span id="msg" class="text-sm text-green-500 ml-5"> </span>
+                           
+
+                        </div>
+
+
+                        <div class="">
+
+                            <p class="text-white text-xl mt-10"> <i class="fa-regular fa-paper-plane"></i>
+                                alaukikmishra1210@gmail.com</p>
+                            <p class="text-white text-xl mt-10"> <i class="fa-solid fa-phone"></i> +917355172301</p>
+                            <div class="icons mt-10">
+                                <a target="_blank" class="text-white text-xl ml-5 " href= " www.linkedin.com/in/alaukik-mishra-189278290
+                                " ><i class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" class="text-white text-xl ml-5 " href="https://www.instagram.com/alaukik__k/?next=%2F&hl=en"><i
+                                        class="fa-brands fa-square-instagram"></i></a>
+                                <a target="_blank" class="text-white text-xl ml-5 " href="https://x.com/Alaukik_k"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a target="_blank" class="text-white text-xl ml-5 " href="https://discord.com/channels/@demonjacks"><i class="fa-brands fa-discord"></i></a>
+                                <a  target="_blank" class="text-white text-xl ml-5 " href="https://github.com/Alaukik1210"><i class="fa-brands fa-github"></i></a>
+
+                            </div>
+                           
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </footer>
+
+
+        </section>
+    </div>
+
+    <script src="script.js">
+       
+      </script>
+</body>
+
+
+</html>
