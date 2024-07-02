@@ -17,9 +17,6 @@ form.addEventListener('submit', (e) => {
 
 /* Function To Redirect to given link */
 const redirect = (url) => {
-  let win = window.open(url, '_blank');
-  win.focus;
+	let win = window.open(url, '_blank');
+	win.focus;
 };
-typewriterConfig = ['Frontend Developer', true];
-typewriter();
-// Hello thisis just test 
