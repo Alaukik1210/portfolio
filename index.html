@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+        <script src="https://unpkg.com/@nicesapien0/typewriter.js/typewriter.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://kit.fontawesome.com/14cb17ffa1.js" crossorigin="anonymous"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/14cb17ffa1.js" crossorigin="anonymous"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    boxShadow: {
-                        'sd': '12px 8px 20px #EB5E28'
-                    },
-                    animation: {
-                        "bouncefade": "bounce 2s infinite"
-                    },
-                    colors: {
-                        primary: "#252422",
-                        text: "#EB5E28",
-                        accent: "#FFFCF2",
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
-</head>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						boxShadow: {
+							sd: '12px 8px 20px #EB5E28',
+						},
+						animation: {
+							bouncefade: 'bounce 2s infinite',
+						},
+						colors: {
+							primary: '#252422',
+							text: '#EB5E28',
+							accent: '#FFFCF2',
+							clifford: '#da373d',
+						},
+					},
+				},
+			};
+		</script>
+	</head>
 
 	<body class="bg-primary scroll-smooth m-10 mt-5 overflow-x-hidden">
 		<div class="overflow-x-hidden full-page font-[poppins]">
@@ -67,7 +69,7 @@
 
 			<!-- ------ABOUT---------------------- -->
 			<section id="about" class="flex justify-center items-center">
-				<div class="p-20 max-h-full sm:shadow-lg shadow-slate-500 rounded-3xl">
+				<div class=" max-h-full sm:shadow-lg shadow-slate-500 rounded-3xl">
 					<h1 class="text-white text-3xl md:text-4xls lg:text-5xl font-semibold text-center md:text-left">About me</h1>
 					<p class="text-accent pt-10 text-lg">
 						Hello! My name is <span class="text-text"> Alaukik Mishra, </span> and I'm currently a 20-year-old pursuing a Bachelor's degree in
@@ -132,123 +134,109 @@
 			</section>
 			<!-- --------------PROJECT-------------------- -->
 
-        <section>
-            <div id="project" class=" flex justify-center items-center ">
-                <div
-                    class="p-20  md:shadow-lg shadow-slate-500 rounded-3xl w-full flex justify-center items-center flex-col">
-                    <h1 class="text-white text-5xl font-semibold text-left w-full">Project</h1>
+			<section>
+				<div id="project" class="mt-20 flex justify-center items-center">
+					<div class="md:shadow-lg shadow-slate-500 rounded-3xl w-full flex justify-center items-center flex-col pb-20">
+						<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-semibold text-left w-full text-center md:text-left">Project</h1>
+						<div class="md:grid md:gap-16 lg:gap-20 md:grid-cols-3 lg:grid-cols-3 mt-5">
+							<div
+								class="text-text rounded-lg shadow-sd p-6 bg-primary h-fit mt-5 hover:shadow-none hover:-translate-y-3 transition duration-150 ease-in-out hover:ease-in-out hover:text-white hover:bg-text hover:delay-175 hover:text-white w-[250px] sm:w-[300px]"
+								onclick='redirect("https://alaukik1210.github.io/WeatherApp/")'
+							>
+								<img class="w-50 md:w-[300px] rounded-lg" src="./weather-logo.jpg" alt="" />
+								<h1 class="text-center text-xl mt-4 md:m-5 sm:text-2xl">Weather</h1>
+								<h3 class="hover:text-white text-center">click here <i class="fa-solid fa-up-right-from-square"></i></h3>
+							</div>
+							<div
+								class="text-text rounded-lg shadow-sd p-6 bg-primary h-fit mt-5 hover:shadow-none hover:-translate-y-3 transition duration-150 ease-in-out hover:ease-in-out hover:text-white hover:bg-text hover:delay-175 hover:text-white w-[250px] sm:w-[300px]"
+								onclick='redirect("https://calculator-by-alaukik.netlify.app/")'
+							>
+								<img class="w-50 hover:shadow-none md:w-[300px] rounded-lg" src="./calc.jpg" alt="" />
+								<h1 class="text-center text-xl mt-4 md:m-5 sm:text-2xl">Calculator</h1>
+								<h3 class="hover:text-white text-center">click here <i class="fa-solid fa-up-right-from-square"></i></h3>
+							</div>
 
+							<div
+								class="text-text rounded-lg shadow-sd p-6 bg-primary h-fit mt-5 hover:shadow-none hover:-translate-y-3 transition duration-150 ease-in-out hover:ease-in-out hover:text-white hover:bg-text hover:delay-175 hover:text-white w-[250px] sm:w-[300px]"
+								onclick='redirect("https://alaukik1210.github.io/Expence-Tracker/")'
+							>
+								<img class="w-50 md:w-[300px] rounded-lg" src="./expences.jpeg" alt="" />
+								<h1 class="text-center text-xl mt-4 md:m-5 sm:text-2xl">Expense Tracker</h1>
+								<h3 class="hover:text-white text-center">click here <i class="fa-solid fa-up-right-from-square"></i></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ---------------contact section----------------- -->
+			<section>
+				<footer>
+					<div id="contact" class="mt-20 md:shadow-lg shadow-slate-500 rounded-3xl w-full">
+						<h1 class="text-white text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-semibold text-left w-full mb-8">Contact me</h1>
+						<div class="flex flex-col md:flex md:flex-row md:justify-evenly items-center md:items-start">
+							<div class="flex flex-col">
+								<form name="submit-to-google-sheet" class="flex flex-col">
+									<input
+										class="shadow-sd bg-transparent text-white w-[320px] sm:w-96 sm:h-16 m-4 p-4"
+										type="text"
+										name="Name"
+										placeholder="your name"
+										required
+									/>
+									<input
+										class="bg-transparent shadow-sd sm:w-96 w-[320px] text-white h-16 m-4 p-4"
+										type="email"
+										name="Email"
+										placeholder="your Email"
+										required
+									/>
+									<textarea
+										class="h-40 sm:w-96 w-[320px] text-white bg-transparent shadow-sd m-4 p-4"
+										name="Message"
+										id="message"
+										placeholder="message"
+									></textarea>
+									<button class="rounded-lg border-none bg-text p-2 w-[8rem] outline-none mt-8 ml-8 text-white hover:bg-orange-900">
+										Submit
+									</button>
+								</form>
+								<span id="msg" class="text-sm text-green-500 ml-5"> </span>
+							</div>
 
-                    <div class=" md:grid md:gap-0 lg:gap-28 md:grid-cols-1 lg:grid-cols-3  mt-5 ">
-                        
-                        <a target="_blank"  href="https://alaukik1210.github.io/WeatherApp/"
-                            class="text-text rounded-lg  shadow-sd   p-10 m-5 bg-primary md:h-fit md:w-fit  hover:shadow-none  hover:-translate-y-3   transition duration-150 ease-in-out hover:ease-in-out  hover:text-white hover:bg-text hover:delay-175 hover:text-white ">
-                            <img class="h-50 w-50   md:h-[300px] md:w-[300px] rounded-lg" src="./weather-logo.jpg"
-                                alt="">
-                            <h1 class="md:text-2xl text-center text-3xl mt-4 md:m-5 md:text-3xl">
-                                Weather
-                            </h1>
-                            <h3 class="hover:text-white text-center">
-                                click here <i class="fa-solid fa-up-right-from-square"></i>
-                            </h3>
-                           
-                           
-                        </a>
-                    
-                        
-                        <a target="_blank" href="https://calculator-by-alaukik.netlify.app/"
-                            class=" text-text rounded-lg shadow-sd  p-10 m-5 bg-primary md:h-fit md:w-fit  hover:shadow-none  hover:-translate-y-3   transition duration-150 ease-in-out hover:ease-in-out  hover:text-white hover:bg-text hover:delay-175 hover:text-white">
-                            <img class="h-50 w-50  hover:shadow-none md:h-[300px] md:w-[300px] rounded-lg"
-                                src="./calc.jpg" alt="">
-                            <h1 class="md:text-2xl text-center text-3xl mt-4 md:m-5 md:text-3xl">
-                                Calculator
-                            </h1>
-                            <h3 class="hover:text-white text-center">
-                                click here <i class="fa-solid fa-up-right-from-square"></i>
-                            </h3>
-                            
-
-                            
-
-                                   
-
-                        </a>
-                    
-                        
-                        <a target="_blank" href="https://alaukik1210.github.io/Expence-Tracker/"
-                            class="text-text shadow-sd z-50 rounded-lg p-10 m-5 bg-primary md:h-fit md:w-fit  hover:shadow-none  hover:-translate-y-3   transition duration-150 ease-in-out hover:ease-in-out  hover:text-white hover:bg-text hover:delay-175 hover:text-white">
-                            <img class="h-50 w-50   hover:shadow-none md:h-[300px] md:w-[300px]  rounded-lg "
-                                src="./expences.jpeg" alt="">
-                            <h1 class="md:text-2xl text-center text-3xl mt-4 md:m-5 md:text-3xl">
-                                Expence Tracker
-                            </h1>
-                            <h3 class="hover:text-white text-center">
-                                click here <i class="fa-solid fa-up-right-from-square"></i>
-                            </h3>
-                            
-                            
-                    </a>
-                
-                </div>
-            </div>
-        </section>
-        <!-- ---------------contact section----------------- -->
-        <section>
-
-            <footer>
-                <div id="contact" class="p-20  md:shadow-lg shadow-slate-500 rounded-3xl w-full">
-                    <h1 class="text-white text-5xl font-semibold text-left w-full mb-8">
-                        Contact me
-                    </h1>
-                    <div class="flex justify-evenly">
-
-                        <div class=" flex flex-col   ">
-                            <form name="submit-to-google-sheet"  class=" flex flex-col   ">
-                                <input class="shadow-sd bg-transparent text-white w-96 h-16 m-4 p-4" type="text" name="Name"
-                                placeholder="your name" required>
-                            <input class="bg-transparent shadow-sd w-96 text-white h-16 m-4 p-4" type="email" name="Email" placeholder="your E-mail"
-                                required>
-                            <textarea class="h-40 w-96 text-white bg-transparent shadow-sd m-4 p-4 " name="Message" id="message"
-                                placeholder="message"></textarea>
-                                <button
-                                class="rounded-lg border-none bg-text p-2 w-[8rem] outline-none mt-8 ml-8  text-white hover:bg-orange-900">Submit</button>
-
-                            </form>
-                            <span id="msg" class="text-sm text-green-500 ml-5"> </span>
-                           
-
-                        </div>
-
-
-                        <div class="">
-
-                            <p class="text-white text-xl mt-10"> <i class="fa-regular fa-paper-plane"></i>
-                                alaukikmishra1210@gmail.com</p>
-                            <p class="text-white text-xl mt-10"> <i class="fa-solid fa-phone"></i> +917355172301</p>
-                            <div class="icons mt-10">
-                                <a target="_blank" class="text-white text-xl ml-5 " href= " www.linkedin.com/in/alaukik-mishra-189278290
-                                " ><i class="fa-brands fa-linkedin"></i></a>
-                                <a target="_blank" class="text-white text-xl ml-5 " href="https://www.instagram.com/alaukik__k/?next=%2F&hl=en"><i
-                                        class="fa-brands fa-square-instagram"></i></a>
-                                <a target="_blank" class="text-white text-xl ml-5 " href="https://x.com/Alaukik_k"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a target="_blank" class="text-white text-xl ml-5 " href="https://discord.com/channels/@demonjacks"><i class="fa-brands fa-discord"></i></a>
-                                <a  target="_blank" class="text-white text-xl ml-5 " href="https://github.com/Alaukik1210"><i class="fa-brands fa-github"></i></a>
-
-                            </div>
-                           
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </footer>
-
-
-        </section>
-    </div>
+							<div class="mt-10">
+								<div class="flex flex-col h-fit w-full gap-3">
+									<p class="text-gray-400 text-sm sm:text-md md:text-lg">
+										<i class="fa-regular fa-paper-plane"></i> alaukikmishra1210@gmail.com
+									</p>
+									<p class="text-white text-sm sm:text-md"><i class="fa-solid fa-phone"></i> +917355172301</p>
+								</div>
+								<div class="icons mt-10">
+									<a
+										target="_blank"
+										class="text-white text-xl ml-5"
+										href=" https://www.linkedin.com/in/alaukik-mishra-189278290
+                                "
+										><i class="fa-brands fa-linkedin"></i
+									></a>
+									<a target="_blank" class="text-white text-xl ml-5" href="https://www.instagram.com/alaukik__k/?next=%2F&hl=en"
+										><i class="fa-brands fa-square-instagram"></i
+									></a>
+									<a target="_blank" class="text-white text-xl ml-5" href="https://x.com/Alaukik_k"><i class="fa-brands fa-x-twitter"></i></a>
+									<a target="_blank" class="text-white text-xl ml-5" href="https://discord.com/channels/@demonjacks"
+										><i class="fa-brands fa-discord"></i
+									></a>
+									<a target="_blank" class="text-white text-xl ml-5" href="https://github.com/Alaukik1210"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</section>
+		</div>
 
 		<script src="script.js"></script>
 	</body>
 </html>
+
